@@ -15,24 +15,21 @@ class StudentDesks {
        /*
         *  your code goes here
         */
-       int isEvenA = classA % 2;
-       int isEvenB = classB % 2;
-       int isEvenC = classC % 2;
 
  
-       if (isEvenA == 1){
+       if (classA % 2 == 1){
          deskA = (classA / 2) + 1;
        } else {
          deskA = classA / 2;
        }
 
-       if (isEvenB == 1){
+       if (classB % 2 == 1){
          deskB = (classB / 2) + 1;
        } else {
          deskB = classB / 2;
        }
 
-       if (isEvenC == 1){
+       if (classC % 2 == 1){
          deskC = (classC / 2) + 1;
        } else {
          deskC = classC / 2;
