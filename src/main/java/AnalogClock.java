@@ -17,7 +17,7 @@ class AnalogClock {
  
         double minutes = (remainder/30.0) * 60;
  
-        double minutesDegree = minutes * 6;
+        int minutesDegree = (int) minutes * 6;
  
         System.out.print(minutesDegree);
  
