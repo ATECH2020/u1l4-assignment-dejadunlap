@@ -17,15 +17,19 @@ class Timestamps {
        /*
         *  your code goes here
         */
-      
-       int differenceH = hours2 - hours1;
-       int differenceM = minutes2 - minutes1;
+       
+    
+       int convertH1 = hours1 * 3600;
+       int convertH2 = hours2 * 3600;
+       int convertM1 = minutes1 * 60;
+       int convertM2 = minutes2 * 60;
+    
+       int differenceH = convertH2 - convertH1;
+       int differenceM = convertM2 - convertM1;
        int differenceS = seconds2 - seconds1;
  
-       int convertH = differenceH * 3600;
-       int convertM = differenceM * 60;
  
-       int totalDifference = convertH + convertM + differenceS;
+       int totalDifference = differenceH + differenceM + differenceS;
  
        System.out.print(totalDifference);
        // closing the scanner object
